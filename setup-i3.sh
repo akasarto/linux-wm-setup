@@ -21,12 +21,15 @@ sudo apt upgrade -y
 
 # install dependencies
 sudo apt install -y \
+    curl \
+    wget \
     xserver-xorg-core \
     x11-xserver-utils \
+    mesa-utils \
     xinit \
-    wget \
     i3-wm \
     rxvt-unicode \
+    thunar \
     rofi
 
 # .Xresources
@@ -53,9 +56,7 @@ wget https://github.com/microsoft/cascadia-code/releases/download/v2407.24/Casca
 7z e CascadiaCode-2407.24.zip ttf/*.ttf
 rm -f CascadiaCode-2407.24.zip
 
-# Microsoft Edge :p
+# Brave
 cd ~
 
-wget https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_131.0.2903.99-1_amd64.deb
-
-sudo apt install -y ./microsoft-edge-stable_131.0.2903.99-1_amd64.deb
+curl -fsS https://dl.brave.com/install.sh | sh
