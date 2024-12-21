@@ -30,7 +30,9 @@ sudo apt install -y \
     i3-wm \
     rxvt-unicode \
     thunar \
-    rofi
+    rofi \
+    zip \
+    unzip
 
 # .Xresources
 
