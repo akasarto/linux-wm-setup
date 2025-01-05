@@ -33,7 +33,6 @@ sudo apt install -y \
     rxvt-unicode \
     mesa-utils \
     thunar \
-    i3-wm \
     xinit \
     rofi \
     curl \
