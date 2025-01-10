@@ -1,39 +1,82 @@
 ! xrdb ~/.Xresources
+! DOCS:   https://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
 
 ! --------------------------------------
 
-URxvt.font:                xft:CascadiaMonoNF:pixelsize=16:book
-URxvt.boldFont:            xft:CascadiaMonoNF:pixelsize=16:bold
-URxvt.italicFont:          xft:CascadiaMonoNFItalic:pixelsize=16:italic
-URxvt.boldItalicFont:      xft:CascadiaMonoNFItalic:pixelsize=16:bold:italic
+URxvt.perl-ext-common:       default,font-size
 
-URxvt.letterSpace:         0
-URxvt.internalBorder:      0
-URxvt.externalBorder:      0
+URxvt.font:                  xft:CascadiaMonoNF:pixelsize=16:book
+URxvt.boldFont:              xft:CascadiaMonoNF:pixelsize=16:bold
+URxvt.italicFont:            xft:CascadiaMonoNFItalic:pixelsize=16:italic
+URxvt.boldItalicFont:        xft:CascadiaMonoNFItalic:pixelsize=16:bold:italic
 
-URxvt.cursorBlink: 		     true
-URxvt.scrollBar:           false
+URxvt.letterSpace:           0
+URxvt.internalBorder:        3px
+URxvt.externalBorder:        0
 
-URxvt.fading:              0
+URxvt.allow_bold:            1
+
+URxvt.saveLines:             10000
+URxvt.thickness:             8
+URxvt.scrollBar:             0
+
+URxvt.fading:                0
+URxvt.cursorBlink:           1
+URxvt.cursorUnderline:       1
+
+URxvt.keysym.C-S-plus:       font-size:increase
+URxvt.keysym.C-KP_Add:       font-size:increase
+URxvt.keysym.C-S-underscore: font-size:decrease
+URxvt.keysym.C-KP_Subtract:  font-size:decrease
+URxvt.keysym.C-0:            font-size:reset
+URxvt.keysym.C-KP_0:         font-size:reset
+
+URxvt.iso14755:              0
+URxvt.iso14755_52:           0
+
+URxvt.keysym.Home:           \033[H
+URxvt.keysym.End:            \033[F
 
 ! --------------------------------------
+! https://terminal.sexy/
 
-URxvt.foreground: #9E9E9E
-URxvt.background: #000000
+! special
+URxvt.foreground:   #9E9E9E
+URxvt.background:   #000000
+URxvt.cursorColor:  #A6A28C
 
-URxvt.color0:  #2E3436
-URxvt.color1:  #A40000
-URxvt.color2:  #4E9A06
-URxvt.color3:  #C4A000
-URxvt.color4:  #008A17
-URxvt.color5:  #75507B
-URxvt.color6:  #CE5C00
-URxvt.color7:  #BABDB9
-URxvt.color8:  #555753
-URxvt.color9:  #EF2929
-URxvt.color10: #8AE234
-URxvt.color11: #AF9155
-URxvt.color12: #729FCF
-URxvt.color13: #AD7FA8
-URxvt.color14: #FCAF3E
-URxvt.color15: #EEEEEC
+! black
+URxvt.color0:       #20201D
+URxvt.color8:       #7D7A68
+
+! red
+URxvt.color1:       #D73737
+URxvt.color9:       #D73737
+
+! green
+URxvt.color2:       #60AC39
+URxvt.color10:      #60AC39
+
+! yellow
+URxvt.color3:       #CFB017
+URxvt.color11:      #CFB017
+
+! blue
+URxvt.color4:       #66E19F
+URxvt.color12:      #66E19F
+
+! magenta
+URxvt.color5:       #B854D4
+URxvt.color13:      #B854D4
+
+! cyan
+URxvt.color6:       #1FAD83
+URxvt.color14:      #1FAD83
+
+! white
+URxvt.color7:       #A6A28C
+URxvt.color15:      #FEFBEC
+
+! highlights
+URxvt.highlightColor: #2f4125
+URxvt.highlightTextColor: white
